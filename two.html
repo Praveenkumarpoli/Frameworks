@@ -1,0 +1,141 @@
+
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <title>Google Loader</title>  
+    <style>
+        * { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+  
+body { 
+    display: flex; 
+    justify-content: center; 
+    min-height: 100vh; 
+    background-image: url(./sun.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white; 
+} 
+  
+header { 
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    position: absolute; 
+    top: 25%; 
+} 
+  
+header h1 { 
+    position: inherit;
+    font-size: 4rem; 
+    color: #008800; 
+} 
+  
+header p { 
+    margin-top: 20px; 
+    font-size: 2rem; 
+} 
+  
+main { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    column-gap: 30px; 
+} 
+  
+main p { 
+    font-size: 2rem; 
+    position: absolute; 
+    top: 40%; 
+} 
+  
+  
+main .circle { 
+    height: 40px; 
+    width: 40px; 
+    border-radius: 50%; 
+    background-color: #008ae6; 
+    box-shadow: 0 10px 20px rgb(0, 0, 0); 
+    animation: loader .8s ease-in-out infinite alternate; 
+} 
+  
+.circle:nth-child(2) { 
+    animation-delay: -0.25s; 
+} 
+  
+.circle:nth-child(3) { 
+    background: red; 
+    animation-delay: -0.5s; 
+} 
+  
+.circle:nth-child(4) { 
+    background: yellow; 
+    animation-delay: -0.75s; 
+} 
+  
+.circle:nth-child(5) { 
+    background: green; 
+    animation-delay: -1s; 
+} 
+  
+@keyframes loader { 
+    from { 
+        transform: translateY(-10px); 
+    } 
+  
+    to { 
+        transform: translateY(10px); 
+    } 
+}
+img{
+    border-radius: 20px;
+}
+button{
+            border-radius: 15px;
+            background-color: black;
+            color: green;
+            font-size: x-large;
+
+        }
+        div{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            height: 600px;
+        }
+        div a{
+            text-decoration: none;
+        }
+        .lm:hover{
+            border-radius: 15px;
+            background: rgb(92, 224, 226);
+            box-shadow: 4px 2px 50px 7px rgb(88, 198, 48);
+        }
+    </style>
+</head> 
+  
+<body> 
+    
+    <header> 
+        <h1>GOOGLE</h1> 
+     <img src="../animations/pc1.jpg">
+    </header> 
+    
+    <main> 
+        <p>Google Assistant</p> 
+        <div class="circle"></div> 
+        <div class="circle"></div> 
+        <div class="circle"></div> 
+        <div class="circle"></div> 
+    </main> 
+    <div>
+        <a href="./three.html"><button class="lm">Next</button></a>
+    </div>
+</body> 
+  
+</html>
